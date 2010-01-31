@@ -647,7 +647,7 @@ var Carousel = Class.create({
       case 'right':
         
         // ul.slides li    
-        slides.invoke('setStyle',{
+        all_slides.invoke('setStyle',{
           float    : 'left'
         })
         
@@ -963,11 +963,17 @@ var Carousel = Class.create({
       // -- Fade (fade out previous, fade in next) --
       case 'fade':
 
+        var fade_next_slide = next_slide
+        var fade_next_slide_id = next_slide_id
+
         // Previous slide transition out
         current_slide.morph('opacity:0', { duration: (this.options.duration/2), transition: this.options.slides_easing, after: function() {
 
           // Next slide transition in with hook after slide transition
-          next_slide.morph('opacity:1', { duration: (this.options.duration/2), transition: this.options.slides_easing, after: this.after_transition.bind(this, next_slide_id)})
+          fade_next_slide.morph('opacity:1', { duration: (this.options.duration/2), transition: this.options.slides_easing, after: this.after_transition.bind(this, fade_next_slide_id)})
+          
+          fade_next_slide = null
+          fade_next_slide_id = null
           
         }.bind(this)})
         break
