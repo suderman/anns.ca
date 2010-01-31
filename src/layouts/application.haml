@@ -1,7 +1,15 @@
 !!!
 %html
   %head
-    %title StaticMatic
-    = stylesheets
+    %title Ann's Dayhome - Sundance, Calgary Southeast
+    %meta{'http-equiv' => 'imagetoolbar', 'content' => 'no'}
+    %meta{'http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7'}
+    = stylesheets :reset, :elements, :layout
+    = javascripts :'prototype.s2.min', :common, :carousel, :application
   %body
-    = yield
+    #site
+      #header
+      #content
+        =yield
+        .clear
+      #footer
