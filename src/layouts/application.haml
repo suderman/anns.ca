@@ -7,27 +7,41 @@
     = stylesheets :reset, :layout
     = javascripts :'prototype.s2.min', :common, :carousel, :application
   %body
-    #header
-      .section
-        #branding
-          %h1
-            %span Ann's Dayhome
-          %p
-            %span Twenty-one years of loving and <br /> caring for children in my own home.
-          #navigation
-            =link_to 'About Ann', '#'
-            %span &nbsp;|&nbsp;
-            =link_to 'Location', '#'
-            %span &nbsp;|&nbsp;
-            =link_to 'References', '#'
-            %span &nbsp;|&nbsp;
-            =link_to 'Contact', '#'
-        #window
-
-    #content
-      .wrapper
+    #site
+      #header
         .section
-          =yield
-      .clear
-    #footer
-      .section
+          #branding
+            %h1
+              %span Ann's Dayhome
+            %p
+              %span Twenty-one years of loving and <br /> caring for children in my own home.
+            #navigation
+              =link_to 'About Ann', '#'
+              %span &nbsp;|&nbsp;
+              =link_to 'Location', '#'
+              %span &nbsp;|&nbsp;
+              =link_to 'References', '#'
+              %span &nbsp;|&nbsp;
+              =link_to 'Contact', '#'
+          #window
+            .frame
+            .outside
+
+      #content
+        .wrapper
+          .section
+            =yield
+        .clear
+      #footer
+        .section
+          .toy
+          .ball
+        
+          .mirror
+            .frame
+            .mask
+            .carousel
+              %ul.slides
+                %li=img 'slides/default.jpg'
+                %li=img 'slides/hall.jpg'
+                %li=img 'slides/lily.jpg'
