@@ -4,7 +4,7 @@
     %title Ann's Dayhome - Sundance, Calgary SE
     %meta{'http-equiv' => 'imagetoolbar', 'content' => 'no'}
     %meta{'http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7'}
-    = stylesheets :reset, :layout
+    = stylesheets :reset, :application
     = javascripts :'prototype.s2.min', :common, :carousel, :application
   %body
     #site
@@ -16,13 +16,13 @@
             %p
               %span Twenty-one years of loving and <br /> caring for children in my own home.
             #navigation
-              =link_to 'About Ann', '#'
+              =link_to 'About Ann', '#about', :rel => 'about'
               %span &nbsp;|&nbsp;
-              =link_to 'Location', '#'
+              =link_to 'Location', '#location', :rel => 'location'
               %span &nbsp;|&nbsp;
-              =link_to 'References', '#'
+              =link_to 'Availability', '#availability', :rel => 'availability'
               %span &nbsp;|&nbsp;
-              =link_to 'Contact', '#'
+              =link_to 'Contact', '#contact', :rel => 'contact'
           #window
             .frame
             .outside
@@ -31,13 +31,13 @@
         .wrapper
           .section
             =yield
-        .clear
+            .clear
       #footer
         .section
-          .toy
-          .ball
+          #toy
+          #ball
         
-          .mirror
+          #mirror
             .frame
             .mask
             .carousel
@@ -45,3 +45,6 @@
                 %li=img 'slides/default.jpg'
                 %li=img 'slides/hall.jpg'
                 %li=img 'slides/lily.jpg'
+          #credits
+            :markdown
+              &copy; 2010 | lovingly built by her first-born <http://suderman.me>

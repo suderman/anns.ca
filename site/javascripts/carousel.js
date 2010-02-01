@@ -61,7 +61,6 @@
     * Note: If you want to include the wrapper divs in the source (or any other markup shown above), go ahead. 
             Just use the same classnames and the script won't generate duplicates.
 
-
     Customize with CSS (example)
     ============================
 
