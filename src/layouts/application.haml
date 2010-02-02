@@ -6,6 +6,10 @@
     %meta{'http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7'}
     = stylesheets :reset, :application
     = javascripts :'prototype.s2.min', :common, :carousel, :application
+    /[if lte IE 6]
+      = stylesheets :ie
+      = javascripts :ie
+      
   %body
     #site
       #header

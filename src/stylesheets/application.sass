@@ -3,9 +3,10 @@ body
   background: #000
 
 #site
-  min-width: 950px
+  position: relative
   overflow: hidden
   width: 100%
+  min-width: 950px
 
 .section  
   position: relative
@@ -17,8 +18,8 @@ body
   position: relative
   height: 315px
   z-index: 40
-  background: url(../images/header.png) top center repeat-x transparent  
-  
+  background: url(../images/header.png) top center repeat-x transparent
+
   #branding
     position: relative
     width: 660px
@@ -29,7 +30,7 @@ body
       display: block
       width: 660px
       height: 210px
-      background: url(../images/logo.png) top left no-repeat transparent  
+      background: url(../images/logo.png) top left no-repeat transparent
       span
         display: none
     p
@@ -40,14 +41,17 @@ body
       width: 400px
       margin-top: -30px
       margin-right: 50px
+      height: 50px
+      line-height: 1.1
       color: #3d3d53
       font-size: 24px
             
     #navigation
       position: relative
-      float: right
+      float: right      
       text-align: right
-      margin-top: -205px
+      width: 400px
+      margin-top: -213px
       margin-right: 50px
       font-family: font-family: Geneva, Helvetica, "MS Sans Serif", sans-serif
       a
@@ -56,6 +60,7 @@ body
 
   #window
     position: absolute
+    z-index: 40
     left: 704px
     top: 0px
     width: 404px
@@ -108,6 +113,7 @@ body
     h2
       color: #f80bb9
       font-size: 24px
+      font-weight: normal
       line-height: 2.4
       
     p
@@ -123,10 +129,10 @@ body
       z-index: 50
       float: right
       margin-top: -120px
-      margin-right: -115px          
-    
+      margin-right: -115px
+
     #map
-      width: 550px
+      width: 540px
       height: 250px
       overflow: hidden
       border: 5px solid #f80bb9
@@ -148,10 +154,10 @@ body
       float: right
       width: 306px
       height: 325px
+      overflow: hidden
       margin-top: 350px
       background: transparent url(../images/picture_back.png) top left no-repeat
-      overflow: hidden
-      
+
       .frame
         position: absolute
         z-index: 20
@@ -159,7 +165,7 @@ body
         top: 0px
         width: 306px
         height: 325px    
-        background: transparent url(../images/picture_frame.png) top left no-repeat      
+        background: transparent url(../images/picture_frame.png) top left no-repeat
 
       .carousel
         position: absolute
@@ -194,6 +200,7 @@ body
 #footer  
   clear: both
   position: relative
+  z-index: 30
   height: 220px
   background: url(../images/footer.jpg) top center repeat-x transparent
 
@@ -231,7 +238,7 @@ body
       height: 1056px
       z-index: 40
       background: url(../images/mirror.png) top left no-repeat transparent
-    
+
     .mask
       position: absolute    
       left: 120px
@@ -252,8 +259,8 @@ body
         repeat: repeat-x
         position: bottom
         attachment: fixed
-        image: url(../images/glare.png)    
-    
+        image: url(../images/glare.png)
+
     .carousel
       position: absolute
       left: 120px
