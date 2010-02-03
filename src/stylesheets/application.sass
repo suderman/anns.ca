@@ -29,7 +29,7 @@ body
   position: relative
   height: 315px
   z-index: 40
-  background: url(../images/header.png) top center repeat-x transparent
+  background: url(../images/header.png) top center repeat-x
 
   #branding
     position: relative
@@ -96,7 +96,7 @@ body
       background:
         color: #fff
         repeat: no-repeat
-        position: 65% top
+        position: 75% top
         attachment: fixed
         image: url(../images/outside.jpg)
 
@@ -119,7 +119,7 @@ body
     background: url(../images/main.png) top left repeat-y #fff
     width: 550px
     padding: 40px 40px 20px
-    min-height: 1000px
+    min-height: 1300px
     
     h2
       color: #f80bb9
@@ -196,6 +196,7 @@ body
           font-style: italic
           
           .quote_open
+            display: block
             width: 45px
             height: 45px
             margin-top: -10px
@@ -203,6 +204,7 @@ body
             float: left
             
           .quote_close
+            display: block
             width: 45px
             height: 45px
             background: transparent url(../images/quote_close.gif) top left no-repeat
@@ -277,7 +279,8 @@ body
       left: 120px
       top: 162px
       width: 440px
-      height: 748px   
+      height: 748px
+      overflow: hidden
       z-index: 10 
       background-color: #fff    
       li

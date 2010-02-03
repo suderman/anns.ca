@@ -29,5 +29,11 @@ module ApplicationHelper
       tr("-", "_").
       downcase
   end
+  
+  def testimonial(options = {})
+    @text = options[:text]
+    @padding = options[:padding]
+    partial 'testimonial'
+  end
 
 end
