@@ -1,0 +1,51 @@
+body { font: 14px/1.5em Georgia, "Times New Roman", serif; background: #000; }
+
+#preload { position: absolute; top: -1000px; height: 100px; width: 100px; overflow: hidden; }
+#preload img { border: 0; width: 10px; height: 10px; }
+
+#site { position: relative; overflow: hidden; width: 100%; min-width: 950px; }
+
+.section { position: relative; width: 950px; margin: 0 auto; min-height: 50px; }
+
+#header { position: relative; height: 315px; z-index: 40; background: url(../images/header.png) top center repeat-x; }
+#header #branding { position: relative; width: 660px; height: 100%; padding-top: 5px; }
+#header #branding h1 { display: block; width: 660px; height: 210px; background: url(../images/logo.png) top left no-repeat transparent; }
+#header #branding h1 span { display: none; }
+#header #branding p { display: block; position: relative; text-align: right; float: right; width: 400px; margin-top: -30px; margin-right: 50px; height: 50px; line-height: 1.1; color: #3d3d53; font-size: 24px; }
+#header #branding #navigation { position: relative; float: right; text-align: right; width: 400px; margin-top: -213px; margin-right: 50px; font-family: font-family: Geneva, Helvetica, "MS Sans Serif", sans-serif; }
+#header #branding #navigation a { color: #3d3d53; text-decoration: none; }
+#header #window { position: absolute; z-index: 40; left: 704px; top: 0px; width: 404px; height: 492px; }
+#header #window .frame { position: absolute; z-index: 40; left: 0px; top: 0px; width: 404px; height: 492px; background: transparent url(../images/window.png) top left no-repeat; }
+#header #window .outside { position: absolute; z-index: 30; left: 20px; top: 10px; width: 360px; height: 460px; background-color: #fff; background-repeat: no-repeat; background-position: 75% top; background-attachment: fixed; background-image: url(../images/outside_sudermanor.jpg); }
+
+#content { position: relative; z-index: 30; background: url(../images/wallpaper.jpg) bottom center repeat transparent; margin-top: -10px; }
+#content .wrapper { position: relative; background: url(../images/wallpaper_bottom.jpg) bottom center repeat-x transparent; padding: 35px 0 65px; min-height: 300px; }
+#content #main { position: relative; z-index: 30; float: left; background: url(../images/main.png) top left repeat-y #fff; width: 550px; padding: 40px 40px 20px; min-height: 1300px; }
+#content #main h2 { color: #f80bb9; font-size: 24px; font-weight: normal; line-height: 2.4; }
+#content #main p { font-size: 14px; line-height: 2.4; margin: 0 0 20px; }
+#content #main a { color: #f80bb9; }
+#content #main img.headshot { position: relative; z-index: 50; float: right; margin-top: -120px; margin-right: -115px; }
+#content #main #map { width: 540px; height: 250px; overflow: hidden; border: 5px solid #f80bb9; }
+#content #main .note { text-align: right; border: 2px dashed #f283d4; padding: 10px; margin-left: 100px; margin-top: 25px; }
+#content #side { float: right; width: 315px; }
+#content #side #testimonials { display: block; position: relative; float: right; width: 306px; height: 325px; overflow: hidden; margin-top: 350px; background: transparent url(../images/picture_back.png) top left no-repeat; }
+#content #side #testimonials .frame { position: absolute; z-index: 20; left: 0px; top: 0px; width: 306px; height: 325px; background: transparent url(../images/picture_frame.png) top left no-repeat; }
+#content #side #testimonials .carousel { position: absolute; left: 28px; top: 40px; width: 250px; height: 250px; z-index: 10; overflow: hidden; }
+#content #side #testimonials .carousel li { width: 230px; height: 230px; margin-bottom: 20px; padding: 20px 10px 10px 10px; color: #d9d6ce; font-family: Geneva, Helvetica, "MS Sans Serif", sans-serif; font-style: italic; }
+#content #side #testimonials .carousel li .quote_open { display: block; width: 45px; height: 45px; margin-top: -10px; background: transparent url(../images/quote_open.gif) top left no-repeat; float: left; }
+#content #side #testimonials .carousel li .quote_close { display: block; width: 45px; height: 45px; background: transparent url(../images/quote_close.gif) top left no-repeat; float: right; }
+
+#footer { clear: both; position: relative; z-index: 30; height: 220px; background: url(../images/footer.jpg) top center repeat-x transparent; }
+#footer #toy { position: absolute; left: -185px; top: -275px; z-index: 50; width: 360px; height: 385px; background: url(../images/toy.png) top left no-repeat transparent; }
+#footer #ball { position: absolute; left: 510px; top: -150px; z-index: 50; width: 250px; height: 250px; background: url(../images/ball.png) top left no-repeat transparent; }
+#footer #mirror { position: absolute; z-index: 40; width: 686px; height: 1056px; left: 555px; top: -910px; }
+#footer #mirror .frame { position: absolute; top: 0; left: 0; width: 686px; height: 1056px; z-index: 40; background: url(../images/mirror.png) top left no-repeat transparent; }
+#footer #mirror .mask { position: absolute; left: 120px; top: 162px; width: 440px; height: 748px; z-index: 20; background: url(../images/mirror_mask.png) top left no-repeat transparent; }
+#footer #mirror .glare { position: absolute; left: 120px; top: 162px; width: 440px; height: 748px; z-index: 15; background-repeat: repeat-x; background-position: bottom; background-attachment: fixed; background-image: url(../images/glare.png); }
+#footer #mirror .carousel { position: absolute; left: 120px; top: 162px; width: 440px; height: 748px; overflow: hidden; z-index: 10; background-color: #fff; }
+#footer #mirror .carousel li { width: 440px; height: 748px; }
+#footer #credits { position: relative; padding-top: 170px; font-family: Geneva, Helvetica, "MS Sans Serif", sans-serif; font-size: 12px; text-align: center; color: #606060; }
+#footer #credits a { color: #606060; text-decoration: none; }
+#footer #credits a:hover { text-decoration: underline; }
+
+.clear { display: block; clear: both; height: 1px; line-height: 1px; font-size: 1px; }
