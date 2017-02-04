@@ -16,7 +16,7 @@ body { font: 14px/1.5em Georgia, "Times New Roman", serif; background: #000; }
 #header #branding #navigation a { color: #3d3d53; text-decoration: none; }
 #header #window { position: absolute; z-index: 40; left: 704px; top: 0px; width: 404px; height: 492px; }
 #header #window .frame { position: absolute; z-index: 40; left: 0px; top: 0px; width: 404px; height: 492px; background: transparent url(../images/window.png) top left no-repeat; }
-#header #window .outside { position: absolute; z-index: 30; left: 20px; top: 10px; width: 360px; height: 460px; background-color: #fff; background-repeat: no-repeat; background-position: 75% top; background-attachment: fixed; background-image: url(../images/outside_sudermanor.jpg); }
+#header #window .outside { position: absolute; z-index: 30; left: 20px; top: 10px; width: 360px; height: 460px; background-color: #fff; background-repeat: no-repeat; background-position: 75% top; background-attachment: fixed; background-image: url(../images/outside.jpg); }
 
 #content { position: relative; z-index: 30; background: url(../images/wallpaper.jpg) bottom center repeat transparent; margin-top: -10px; }
 #content .wrapper { position: relative; background: url(../images/wallpaper_bottom.jpg) bottom center repeat-x transparent; padding: 35px 0 65px; min-height: 300px; }
